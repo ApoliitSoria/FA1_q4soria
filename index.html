@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="validateValues()"> 
+    <div class="page">
+        <form id="form" onsubmit="return submitForm()">
+            <fieldset id="fieldset" form="form">
+                <legend>Form</legend>
+
+                <label for="userName" id="userNameLabel">Name:</label> <br>
+                <input type="text" id="userName" class="input" onblur="checkUserName()" autocomplete="true">
+                <p id="userNameError" class="error"></p>  <br>
+
+                <label for="preferredName" id="preferredNameLabel">Preferred Name:</label> <br>
+                <input type="text" id="preferredName" class="input" onblur="checkPreferredName()" autocomplete="true"> 
+                <p id="preferredNameError" class="error"></p> <br>
+
+                <label for="userPassword" id="userPasswordLabel">Password:</label> <br>
+                <input type="password" id="userPassword" class="input" onblur="checkUserPassword()" autocomplete="true"> 
+                <p id="userPasswordError" class="error"></p>  <br>
+
+                <label for="userEmail" id="userEmailLabel">Email:</label> <br>
+                <input type="email" id="userEmail" class="input" onblur="checkUserEmail()" autocomplete="true"> 
+                <p id="userEmailError" class="error"></p>  <br>
+
+                <label for="userAddress" id="userAddressLabel">Address:</label> <br>
+                <input type="text" id="userAddress" class="input" onblur="checkUserAddress()" autocomplete="true"> 
+                <p id="userAddressError" class="error"></p>  <br>
+
+                <label for="userInterests" id="userInterestsLabel">Your Interests:</label> <br>
+                <textarea cols="50" rows="3" id="userInterests" class="input" onblur="checkUserInterests()"></textarea> 
+                <p id="userInterestsError" class="error"></p>  <br>
+            
+                <input type="radio" id="male" name="userGender" value="Male">
+                <label for="male">Male</label> <br>
+                <input type="radio" id="female" name="userGender" value="Female">
+                <label for="female">Female</label> <br>
+                <input type="radio" id="no" name="userGender" value="Prefer not to say">
+                <label for="no">Prefer not to say.</label> <br> <br>
+
+                <button type="submit" id="submitBtn" disabled="true">Submit</button>
+                <button type="reset" onclick="resetForm()">Reset</button>
+            </fieldset>
+        </form>
+
+        <div id="displayBox">
+            <div class="output" id="userNameDisplay"> Name: </div>
+            <div class="output" id="preferredNameDisplay"> Preferred Name: </div>
+            <div class="output" id="userPasswordDisplay"> Password: </div>
+            <div class="output" id="userEmailDisplay"> Email: </div>
+            <div class="output" id="userAddressDisplay"> Address: </div>
+            <div class="output" id="userInterestsDisplay"> Interests: </div>
+            <div class="output" id="userGenderDisplay"> Gender: </div>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.page{
+    margin-left: 35vw;
+}
+
+#form{
+    margin-top: 1.5vh;
+}
+
+#fieldset {
+    width: 30vw;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.input {
+    width: 20vw;
+}
+
+#interests {
+    resize: none;
+}
+
+.error {
+    font-size: 10.5px;
+    margin: 0;
+    padding: 0;
+    color: rgb(55, 0, 255);
+}
+
+#display-box {
+    width: 35vw;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 2.175vh;
+    font-size: 14px;
+}
+
+.output{
+    color: rgb(47, 0, 255);
+}
